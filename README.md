@@ -1,11 +1,5 @@
 # Running Average Calculator — REST API
 
-**Assignment ID:** R280926724P  
-**Deal Name:** AYU0926PEND01  
-**Company:** Ayurtech
-
----
-
 ## Project Overview
 
 A simple REST API that exposes a single `POST /average` endpoint. Submit any number and the API returns the **running average**, **count**, and **sum** of all numbers submitted since the server started.

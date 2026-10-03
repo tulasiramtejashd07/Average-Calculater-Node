@@ -35,7 +35,7 @@ A clean, responsive webpage is included so users can enter numbers, submit them,
 ## Project Structure
 
 ```text
-ayurtech-average-api/
+Average-Calculater-Api/
 │
 ├── public/                  # Frontend files (served by Express)
 │   ├── index.html           # Webpage markup
@@ -278,7 +278,7 @@ git add .
 git commit -m "feat: add running average calculator API with frontend and tests"
 
 # Create a GitHub repository, then add it as remote
-git remote add origin https://github.com/YOUR_USERNAME/ayurtech-average-api.git
+git remote add origin https://github.com/YOUR_USERNAME/Average-Calculater-Node.git
 
 # Push to GitHub
 git branch -M main

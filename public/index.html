@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Running Average Calculator — Ayurtech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Running Average Calculator</h1>
+      <p class="subtitle">Submit numbers and track their average in real time.</p>
+    </header>
+
+    <!-- API Status -->
+    <div id="status-bar" class="status-bar status-disconnected">
+      ⏳ Checking backend connection…
+    </div>
+
+    <!-- Input Section -->
+    <section class="input-section">
+      <form id="number-form" class="input-form">
+        <input
+          type="number"
+          id="number-input"
+          placeholder="Enter a number"
+          step="any"
+          required
+          autocomplete="off"
+        />
+        <button type="submit" id="submit-btn">Submit Number</button>
+      </form>
+      <p id="form-message" class="form-message"></p>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <span class="stat-label">Running Average</span>
+        <span class="stat-value" id="stat-average">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Numbers</span>
+        <span class="stat-value" id="stat-count">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Sum of Numbers</span>
+        <span class="stat-value" id="stat-sum">0</span>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+      <h2>Number History</h2>
+      <p id="history-empty" class="history-empty">No numbers submitted yet.</p>
+      <ul id="history-list" class="history-list"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built using Node.js and Express.js</p>
+      <p>Ayurtech Technical Assignment</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
